@@ -17,13 +17,14 @@ repositories {
 }
 
 ext {
-    springBootVersion = '3.5.0'
+    springBootVersion = '4.0.9'
 }
 
 dependencies {
     implementation platform("org.springframework.boot:spring-boot-dependencies:${springBootVersion}")
 
     implementation 'org.springframework.boot:spring-boot-starter-webflux'
+    implementation 'org.springdoc:springdoc-openapi-starter-common:3.0.3'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
